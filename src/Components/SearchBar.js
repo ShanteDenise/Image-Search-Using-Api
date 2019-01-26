@@ -1,6 +1,5 @@
 import React from 'react'
 import SearchResults from './SearchResults'
-import {FormGroup, Label, Button, FormControl} from 'react-bootstrap';
 import axios from 'axios';
 
 const API_KEY = `${process.env.REACT_APP_IMAGE_SEARCH}`
@@ -19,11 +18,12 @@ const API_KEY = `${process.env.REACT_APP_IMAGE_SEARCH}`
      handleSubmit = (e) => {
          e.preventDefault()
          const searchValue = this.state.value
-         console.log(searchValue)
-         axios.get(`https://api.unsplash.com/search/photos/?client_id=${API_KEY}&query=${searchValue}}`).then(res => {
+         axios.get(`https://api.unsplash.com/search/photos/?client_id=${API_KEY}&per_page=15&orientation=landscape&query=${searchValue}}`).then(res => {
              this.setState({
+                 
                  searchResult: res.data.results
              })
+             console.log(res.data.results)
      
  })
      }
@@ -37,7 +37,7 @@ const API_KEY = `${process.env.REACT_APP_IMAGE_SEARCH}`
                         class="field-container"
                         type='text'
                         value={this.state.value}
-                        placeholder="Enter text"
+                        placeholder="Search Images..."
                         onChange={this.handleChange}/>
              
           <button className="btn-warning" type="submit"><i class="fa fa-search"></i></button>
