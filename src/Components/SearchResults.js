@@ -7,7 +7,7 @@ class SeacrhResults extends React.Component {
       <div className="image-results">
           {this.props.results.map(image => (
               <div>
-                  <img className="img-lis" src={image.urls.small}
+                  <img className="img-list" src={image.urls.small}
                        key={image.id}/>
               </div>
 

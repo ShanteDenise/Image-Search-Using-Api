@@ -32,19 +32,17 @@ const API_KEY = `${process.env.REACT_APP_IMAGE_SEARCH}`
   render() {
     return (
       <div>
-          <form onSubmit={this.handleSubmit}>
-              <FormGroup>
+          <form onSubmit={this.handleSubmit} className="search-container">
                   <input
                         class="field-container"
                         type='text'
                         value={this.state.value}
                         placeholder="Enter text"
                         onChange={this.handleChange}/>
-              </FormGroup>
-          <Button className="btn-warning" type="submit">SUBMIT</Button>
+             
+          <button className="btn-warning" type="submit"><i class="fa fa-search"></i></button>
           </form>
           <SearchResults results={this.state.searchResult}/>
-          
       </div>
     )
   }
