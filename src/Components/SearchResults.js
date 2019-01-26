@@ -1,5 +1,4 @@
 import React  from 'react'
-import {Link, BrowserRouter as Router} from 'react-router-dom'
 
 
 
@@ -10,7 +9,6 @@ class SeacrhResults extends React.Component {
       <div className="image-results">
           {this.props.results.map(image => (
               <div>
- 
                   <a href = {image.user.links.html} alt="linktounsplash" target="_blank"> 
                   <img className="img-list" src={image.urls.small} alt="searchresult"
                        key={image.id}/>
