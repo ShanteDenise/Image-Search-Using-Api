@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f47db200161d489244c9",
-    "url": "/Image-Search-Using-Api/static/css/main.ce5f5848.chunk.css"
+    "revision": "a67e1dc6bb1230eeace9",
+    "url": "/Image-Search-Using-Api/static/css/main.344483a7.chunk.css"
   },
   {
-    "revision": "f47db200161d489244c9",
-    "url": "/Image-Search-Using-Api/static/js/main.f47db200.chunk.js"
+    "revision": "a67e1dc6bb1230eeace9",
+    "url": "/Image-Search-Using-Api/static/js/main.a67e1dc6.chunk.js"
   },
   {
     "revision": "0ed3ac256ec96df79b28",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/Image-Search-Using-Api/static/js/runtime~main.6c0970ae.js"
   },
   {
-    "revision": "dfeaf18e15108b26e7b7d87d5e24dba7",
+    "revision": "6ffebaa6621d0b7247932f5b311ef093",
     "url": "/Image-Search-Using-Api/index.html"
   }
 ];
