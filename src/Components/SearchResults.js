@@ -4,10 +4,11 @@ class SeacrhResults extends React.Component {
   
   render() {
     return (
-      <div>
+      <div className="image-results">
           {this.props.results.map(image => (
               <div>
-                  <img src={image.urls.small}/>
+                  <img className="img-lis" src={image.urls.small}
+                       key={image.id}/>
               </div>
 
           ))}

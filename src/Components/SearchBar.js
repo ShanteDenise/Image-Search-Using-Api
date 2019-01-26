@@ -34,7 +34,7 @@ const API_KEY = `${process.env.REACT_APP_IMAGE_SEARCH}`
       <div>
           <form onSubmit={this.handleSubmit}>
               <FormGroup>
-                  <FormControl
+                  <input
                         class="field-container"
                         type='text'
                         value={this.state.value}
