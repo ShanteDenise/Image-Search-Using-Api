@@ -5,7 +5,7 @@ import React  from 'react'
     return (
       <div>
           <div className="instruction-text">
-          <p>Enter A Keyword To View Images. Click On Any Photo to be Redirected to The Artist's Unsplash Page. </p>
+          <p className="text">Enter A Keyword To View Images. Click On Any Photo to be Redirected to The Artist's Unsplash Page. </p>
           </div>
       </div>
     )

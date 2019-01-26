@@ -116,8 +116,6 @@ input[type=text] {
   border-radius: 25px;
 } 
 
-
-
 .image-results{
   display: flex;
   flex-wrap: wrap;

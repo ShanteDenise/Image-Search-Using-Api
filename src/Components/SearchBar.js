@@ -22,9 +22,7 @@ const API_KEY = `${process.env.REACT_APP_IMAGE_SEARCH}`
              this.setState({
                  
                  searchResult: res.data.results
-             })
-             console.log(res.data.results)
-     
+             })     
  })
      }
      
